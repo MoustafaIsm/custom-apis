@@ -1,7 +1,7 @@
 <?php
     function palindrome($input){ 
         if (strrev($input) == $input){ 
-            return "Paalindrome"; 
+            return "Palindrome"; 
         } else {
             return "Not palindrome";
         }

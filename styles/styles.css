@@ -58,6 +58,11 @@ body {
     background-color: rgb(10, 35, 66);
 }
 
+.card button:hover {
+    cursor: pointer;
+    background-color: rgb(18, 60, 111);
+}
+
 .card h2 {
     text-align: center;
 }
