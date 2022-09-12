@@ -43,3 +43,26 @@ function calculateResult() {
             .then((data) => calculationResult.textContent = "Result= " + data.output);
     }
 }
+
+/*  Strong password */
+
+// Variables
+const passwordInput = document.getElementById("password-input");
+const passwordCheck = document.getElementById("password-check");
+const passwordResult = document.getElementById("password-result");
+
+// Event listeners
+passwordCheck.addEventListener("click", checkIfPasswordStrong);
+
+// Functions
+function checkIfPasswordStrong() {
+    if (passwordInput.value != "") {
+        let formData = new FormData();
+        formData.append("password", passwordInput.value);
+        fetch("./apis/strong-password-API.php", {
+            method: 'post',
+            body: formData
+        }).then((response) => response.json())
+            .then((data) => passwordResult.textContent = data.output);
+    }
+}
