@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My APIs</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,34 +17,34 @@
             <h2>Check if a word is Palindrome: </h2>
             <form>
                 <input type="text" placeholder="Enter a word">
-                <button type="button"> CHECK </button>
+                <button type="button" id="palindrome-check"> CHECK </button>
             </form>
-            <h2></h2>
+            <h2 id="palindrome-result"></h2>
         </div>
         <!-- Mathematical Expression -->
         <div class="card">
-            <h2>Enter 3 values to get: a^3 + b*c - a/b</h2>
+            <h2>Enter 3 values to get: <br> a<sup>3</sup> + b * c - a / b</h2>
             <form>
                 <input type="number" placeholder="a">
                 <input type="number" placeholder="b">
                 <input type="number" placeholder="c">
-                <button type="button"> CALCULATE </button>
+                <button type="button" id="calculate"> CALCULATE </button>
             </form>
-            <h2></h2>
+            <h2 id="calculation-result"></h2>
         </div>
         <!-- Password -->
         <div class="card">
             <h2>Check if your password is strong: </h2>
             <form>
                 <input type="password" placeholder="password">
-                <button type="button"> CHECK </button>
+                <button type="button" id="strong-password-check"> CHECK </button>
             </form>
-            <h2></h2>
+            <h2 id="string-password-result"></h2>
         </div>
         <!-- Christmas Countdown -->
         <div class="card">
             <h2>Time left until next christmas: </h2>
-            <h2></h2>
+            <h2 id="christmas-count-down"></h2>
         </div>
     </section>
 </body>
