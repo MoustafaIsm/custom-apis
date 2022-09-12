@@ -1,0 +1,65 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+}
+
+/* Section */
+body {
+    background-color: rgb(10, 35, 66);
+    font-size: 20px;
+}
+
+.cards-wrapper {
+    display: flex;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 40%;
+    background-color: rgb(44, 165, 141);
+    color: white;
+    margin: 2% 5%;
+    padding: 2% 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+}
+
+.card input {
+    margin: 5%;
+    padding: 4% 2%;
+    border: none;
+    border-bottom: 3px solid rgb(244, 97, 151);
+}
+
+.card button {
+    color: white;
+    font-weight: bold;
+    margin: 5% 30%;
+    padding: 4% 2%;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(10, 35, 66);
+}
+
+.card h2 {
+    text-align: center;
+}
+
+
+/* Media Query */
