@@ -66,3 +66,18 @@ function checkIfPasswordStrong() {
             .then((data) => passwordResult.textContent = data.output);
     }
 }
+
+/*  Chirstmas countdown */
+
+// Variables
+const christmasCountDown = document.getElementById("christmas-count-down");
+
+counterUpdater();
+
+function counterUpdater() {
+    var downloadTimer = setInterval(function () {
+        fetch("./apis/christmas-count-Down-api.php")
+            .then((response) => response.json())
+            .then((data) => christmasCountDown.textContent = data.timeleft);
+    }, 1000);
+}

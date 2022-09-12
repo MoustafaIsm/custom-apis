@@ -67,5 +67,13 @@ body {
     text-align: center;
 }
 
+.counter {
+    background-color: rgb(255, 253, 247);
+    color: rgb(10, 35, 66);
+    margin: 2% 0%;
+    padding: 3%;
+    border-radius: 15px;
+}
+
 
 /* Media Query */
